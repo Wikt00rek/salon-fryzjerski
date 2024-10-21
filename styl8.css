@@ -7,3 +7,16 @@
 .site {
     display: flex;
 }
+* {
+    font-family: Garamond;
+    text-align: center;
+}
+
+.left {
+    width: 72%;
+}
+
+header {
+    background-color: #795548;
+    font-size: 170%;
+}
