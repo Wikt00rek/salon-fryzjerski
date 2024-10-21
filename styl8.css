@@ -30,3 +30,18 @@ main {
     height: 600px;
     width: 200px;
 }
+.right {
+    width: 28%;
+}
+
+footer {
+    background-color: #795548;
+    color: white;
+    padding: 20px;
+}
+
+table {
+    margin: auto;
+    width: 80%;
+    border: 1px solid #795548;
+}
