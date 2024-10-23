@@ -10,7 +10,7 @@
     <div class="box">
         <div class="col-9">
             <h2>PROMOCJA!</h2>
-            <input id="skotkie" type="radio" name="dlugosc" value="Krótkie"/>
+            <input id="krotkie" type="radio" name="dlugosc" value="Krótkie"/>
             <label for="krotkie">Krótkie</label>
             <input id="srednie" type="radio" name="dlugosc" value="Średnie"/>
             <label for="srednie">Średnie</label>
@@ -18,7 +18,46 @@
             <label for="poldlugie">Półdługie</label>
             <input id="dlugie" type="radio" name="dlugosc" value="Długie"/>
             <label for="dlugie">Długie</label>
-            </div>
+           </div>
+        </div>
+        <div>
+            <button oneclick="obliczPromocje()">Odkryj promocje</button>
+            <p>Cena promocyjna<span id="cena-promocyjna"></span></p>
         </div>
         <div class="col-3">
             <div>
+        <div>
+        </body>
+
+        </div>
+        <script>
+            function obliczPromocje() {
+            let krotkie = document.getElementById("krotkie")
+            let srednie = document.getElementById("srednie")
+            let poldlugie = document.getElementById("poldlugie")
+            let dlugie = document.getElementById("dlugie")
+            if (krotkie.checked) {
+                document.getElementById("cena-promocyjna").innerHTML = krotkie.value - 10;
+                console.log("hura jest krotkie", krotkie.value - 10)
+            }
+            if (srednie.checked) {
+                document.getElementById("cena-promocyjna").innerHTML = srednie.value - 10;
+                console.log("hura jest srednie", srednie.value - 10)
+            }
+            if (poldlugie.checked) {
+                document.getElementById("cena-promocyjna").innerHTML = poldlugie.value - 10;
+                console.log("hura jest poldlugie", poldlugie.value - 10)
+            }
+            if (dlugie.checked) {
+                document.getElementById("cena-promocyjna").innerHTML = dlugie.value - 10;
+                console.log("hura jest dlugie", dlugie.value - 10)
+            }
+            console.log(krotkie.value)
+            console.log(srednie.value)
+            console.log(poldlugie.value)
+            console.log(dlugie.value)
+            }
+            
+            </script>
+
+
